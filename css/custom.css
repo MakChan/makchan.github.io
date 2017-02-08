@@ -1,0 +1,154 @@
+/*
+ * Globals
+ */
+
+body {
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px; 
+  margin-bottom: 4px; 
+}
+
+/*
+hr {
+  border-top: 1px solid #555;
+
+
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+#wrapper {
+  min-height: 100%;
+  height: 100%;
+}
+
+
+/*
+ * Navbar 
+ */
+
+.navbar-brand {
+	font-family: "Lato";
+	font-size: 30px;
+	font-weight: 300;
+	text-transform: lowercase;
+	letter-spacing: -2px;
+}
+.navbar-brand:hover {
+	font-size: 34px;
+	letter-spacing: -1px;
+	border-bottom: 3px solid;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #7f8c8d;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	font-weight: 700;
+	border-bottom: 3px solid;
+	padding-bottom: 12px;
+}
+
+/*
+* Main content starts here
+*/
+
+#picture {
+  padding-top: 120px;
+  text-align: center;
+  margin-bottom: 110px;
+}
+img{
+  border-radius: 50%;
+}
+
+/*
+* About
+*/
+.section {
+  padding:40px 30px 20px 30px;
+  font-size: 22px;
+}
+
+.section p {
+  text-align: center;
+  padding: 3% 10% 1% 5%;
+  margin: 0px
+}
+
+#about {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+#skills {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+#contact {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+hr {
+  margin-top: 10px;
+}
+#about hr {
+    width: 300px; 
+    border: 1.5px solid;
+}
+#edu hr {
+    width: 300px; 
+    border: 1.5px solid;
+}
+#skills hr {
+    width: 300px; 
+    border: 1.5px solid;
+}
+#projects hr {
+    width: 300px; 
+    border: 1.5px solid;
+}
+#contact hr {
+    width: 300px; 
+    border: 1.5px solid;
+}
+
+
+
+/*
+ * Footer
+ */
+
+.footer {
+  bottom: 0px;
+  width: 100%;
+  padding-top: 25px;
+  margin-top: 500px;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+
