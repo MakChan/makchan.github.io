@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/makchan15
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mak-chan.github.io
+  * I am makchan15 (https://keybase.io/makchan15) on keybase.
+  * I have a public key with fingerprint 6859 97AB 4754 1F81 DBE5  3B55 3143 C101 9F8B 1CA7
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101bbc43fc9e78576e172f1952dc3dd7c1b9f3bb119c8bfb5e2616d44e15ed2045d0a",
+            "fingerprint": "685997ab47541f81dbe53b553143c1019f8b1ca7",
+            "host": "keybase.io",
+            "key_id": "3143c1019f8b1ca7",
+            "kid": "0101bbc43fc9e78576e172f1952dc3dd7c1b9f3bb119c8bfb5e2616d44e15ed2045d0a",
+            "uid": "86fe51c69ae934f8ca1a86987953d019",
+            "username": "makchan15"
+        },
+        "service": {
+            "hostname": "mak-chan.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1492273996,
+    "expire_in": 157680000,
+    "prev": "61384b26f385d3ae1b34c4193af738fe5dda9934a71dec9ebc7b3c33d65036f2",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.68
+Comment: https://keybase.io/crypto
+
+yMIwAnicrVJbSFRBGF7NS20pPkQEBcbJQMhkZ+dcF8TsImp2l1qz2s6cmbN7ct1d
+z57VNjFE7GKS2oVCupCWEiGJUVpZaGYaiBWFROAS0UOyDxJCZRTYHCt66bF5Geaf
+7/v+7/tnhpLmWawx2vbmV/xxIytm9PGVkMU5vamwikF+HGYcVUwpmduIF5Og4SrV
+MONgbMAGEFJYqCoSEURO4AkQ7CqQODtWIMaCApCkQoQAkBQRqYgjdh7wmGUJ4Ai2
+21gO22Qmg1E1n5voAV3zGVSWFzlJEmTEChwLVBFgRDiIOA4CFiq0paSKCCiyQIke
+f9BkUHNIDpJMzU9r9OCas/cP/H/2HZqTE3mVcEDhJZlIkFVFRQayyEuiIHEQ0/Ym
+MEh0n1xGKLpMLlU8sg9wTHUGQ8sVmkLMyZpR/kLWmJhMt2Z4QuhXrIDuN/yK30vv
+PYYRCDpMvhEOmIRKgly/pVxI82E6TsqoIHpQ8/sYB6BIxdBMbcBKdrsAJYnPYMih
+gKYTl2Yi6AxEG11mH1JhPgKAIovsvApFDkOZAARZhQUSlFUBijQwxrJE48oCwISO
+ESkCggqEmOdskFftjBmu3OdnHBy1KbupZFBz+2QjpBOmenBgb5wlxmpJiI81v5nF
+uiDlz+dre5A4WzzQPnZBr5v4NpOz/nYo8kUd/vFZPdF6a1Ef255S//Xip2MHm8Z2
+148UuPPCT58t7jo/Nb6hxbnQiE/rTQqmJFs/3Mufdnqvvl9ldTufNO7bWdMRdX/f
+39281KOXtz/YNXO3t3AW5cZeraqpiza9bNhzY2K4b7j7befn0fWeJV2TdxzJufVT
+PbWT4uu+uOsDm5kkcSR9R8/GnDNrO46uPFvUxjfUHqmNtLLvEq9lNd3f2lI0Hhb2
+rRYfOl8MzU9/VFl5oDNyejAru/fyzRWNHakl694EoqkLIuf6D/Z77zyv6SnMyx+5
+tO1tw8mEZVsup5UUNBQF7nUVvzk1ebhmufox6sr+CUdXSLc=
+=CU6U
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/makchan15
+
+==================================================================
