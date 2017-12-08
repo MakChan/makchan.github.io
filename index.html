@@ -1,225 +1,417 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <meta name="description" content="Personal Website of Mayank Chauhan.">
     <meta name="author" content="Mayank Chauhan">
-    <link rel="shortcut icon" href="media/favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
 
     <title>Mayank Chauhan</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet"> 
-
-    <!-- Font Awesome 
-    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">-->
-    <script src="https://use.fontawesome.com/9805db5592.js"></script>
-
-    <!-- Loader -->
-    <style>
-     .no-js #loader { display: none;  }
-     .js #loader { display: block; position: absolute; left: 100px; top: 0; }
-     .loader {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 9997;    
-        background: url(media/loader.gif) center no-repeat #fff;     
-     }
-    </style>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery//1.12.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
-    <script>
-      // Wait for window load
-      $(window).load(function() {
-        // Animate loader off screen
-        $(".loader").fadeOut("slow");;
-      });
-    </script>
-
-
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="mdl/material.blue_grey-deep_purple.min.css">
+<!--     <script src="https://use.fontawesome.com/9805db5592.js"></script>    --> 
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body data-spy="scroll" data-
-  target=".navbar-collapse" data-offset="72">
-
-    <div class="loader"></div>
-
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>            
-          </button>
-          <a class="navbar-brand" href="#wrapper"><strong>Mayank</strong>Chauhan</a>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title"><strong>Mayank</strong>Chauhan</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="#about">About</a>
+            <a class="mdl-navigation__link" href="#education">Education</a>
+            <a class="mdl-navigation__link" href="#skills">Skills</a>
+<!--             <a class="mdl-navigation__link" href="#projects">Projects</a> -->
+            <a class="mdl-navigation__link" href="#contact">Contact</a>
+          </nav>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          
-          <ul class="nav navbar-nav navbar-right">
-            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#about">About</a></li>
-            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#edu">Education</a></li>
-            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#skills">Skills</a></li>
-            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#projects">Projects</a></li>
-            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contact">Contact Me</a></li>
-          </ul>
-        </div><!-- nav-collapse ends-->
-      </div><!-- container ends-->
-    </nav>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"></span>
+        <nav class="mdl-navigation navigation-mobile">
+          <a class="mdl-navigation__link" href="#about">About</a>
+          <a class="mdl-navigation__link" href="#education">Education</a>
+          <a class="mdl-navigation__link" href="#skills">Skills</a>
+<!--           <a class="mdl-navigation__link" href="#projects">Projects</a> -->
+          <a class="mdl-navigation__link" href="#contact">Contact</a>
+        </nav>
+      </div>
+        
+      <main class="mdl-layout__content">
+        <div class="page-content">
 
-    <div id="wrapper">
-    
-      <div class="container">
+          <div id="about" class="about-section section">
 
-        <div id="picture">
-          <h1> <img src="media/pic.jpg" align="center">
+            <div class="mdl-grid">
+
+              <div class="mdl-cell mdl-cell--6-col about-content">
+                <h2 class="mdc-typography--display2"> 
+                  About me 
+                </h2>
+                <p class="mdc-typography--headline">
+                  I currently study Information Technology  at JSS Academy of Technical Education. I am an aspiring full-stack web developer. I also like Python.
+                </p>
+              </div>
+
+              <div class="mdl-cell mdl-cell--6-col about-pic">
+                <div class="display-pic">
+                  <img src="images/pic.jpg" align="center">
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div id="education" class="education-section section">
+
+            <div class="mdl-grid">
+
+              <div class="mdl-cell mdl-cell--4-col education-content">
+            <h2> Education </h2>
+              </div>
+              <div class="mdl-cell mdl-cell--8-col about-content">
+            <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp education-card">
+              <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                <div class="mdl-card__supporting-text" style="color: black">
+                  <h2 class="mdl-card__title-text">JSS Academy of Technical Education</h2>
+                  <h6>Information Technology, B.Tech.<br>
+                   2016-2020</h6>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone">
+                <img class="education-icon" src="images/jss.jpg">
+              </div>
+            </section>
+
+            <section class="mdl-grid mdl-grid--no-spacing mdl-shadow--2dp education-card">
+              <div class="mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                <div class="mdl-card__supporting-text" style="color: black">
+                  <h2 class="mdl-card__title-text">Vanasthali Public School, Noida</h2>
+                  <h6>PCM with CS, XII<br>
+                   2002-2016</h6>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone">
+                <img class="education-icon" src="images/vps.png">
+              </div>
+            </section>
+              </div>
+
+          </div>
         </div>
 
 
-        <div id="about" class="section">
-          <h2> About me </h2> 
-          <hr>
-          <p>I currently study Information Technology  at JSS Academy of Technical Education. I am an aspiring full-stack web developer. I also like Python.</p>
+
+          <div id="skills" class="skills-section section">
+
+            <h2> Skills </h2>
+              <div class="skills-title">
+                Languages
+              </div>
+
+              <div class="mdl-grid skills-list">
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/html.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     HTML<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                     <i class="material-icons">star</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col-desktop mdl-cell--12-col-phone">
+                      <img class="skills-img" src="images/css.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col mdl-cell--12-col-phone skills-text">
+                     CSS<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/js.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     Javascript<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/python.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     Python<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                     <i class="material-icons">star</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/c.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     C<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/mysql.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     MySQL<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                     <i class="material-icons">star</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/sqlite.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     SQLite<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                     <i class="material-icons">star</i>
+                   </div>
+                 </div>
+               </div>
+
+
+
+
+              </div>
+
+
+              <div class="skills-title">
+                Frameworks
+              </div>
+
+              <div class="mdl-grid skills-list">
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/flask.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     Flask<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                     <i class="material-icons">star</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/jquery.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     jQuery<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                   </div>
+                 </div>
+               </div>
+
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/bootstrap.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     Bootstrap<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                     <i class="material-icons">star</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--3-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/material.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     Material Design<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                     <i class="material-icons">star</i>
+                   </div>
+                 </div>
+               </div>
+
+              </div>
+
+
+
+              <div class="skills-title">
+                Tools
+              </div>
+
+              <div class="mdl-grid skills-list">
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/git.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     Git<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/npm.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     NPM<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--2-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/heroku.jpg"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     Heroku<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                   </div>
+                 </div>
+               </div>
+
+                <div class="mdl-cell--3-col-desktop mdl-shadow--2dp skills-name">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell--4-col">
+                      <img class="skills-img" src="images/gcp.png"> 
+                    </div>
+                    <div class="mdl-cell--8-col skills-text">
+                     Google Cloud<br>
+                     
+                     <i class="material-icons">star_border</i>
+                     <i class="material-icons">star_half</i>
+                   </div>
+                 </div>
+               </div>
+
+            </div>
+
+          </div>
+
+
+<!--           <div id="projects" class="projects-section section">
+            <h2> Projects </h2>
+          </div>
+ -->
+          <div id="contact" class="contact-section section">
+            <h2> Get in touch </h2>
+
+
+            <h4> Email me at: mayank.chauhan15@gmail.com</h4>
+
+            <a href="https://www.facebook.com/MakChan15"><img src="images/facebook.png"></a>
+            <a href="https://twitter.com/MakChan15"><img src="images/twitter.png"></a>
+            <a href="https://github.com/makchan"><img src="images/github.png"></a>
+            <a href="https://www.linkedin.com/in/makchan15/"><img src="images/linkedin.png"></a>
+          </div>
+
+
+
         </div>
 
-        <div id="edu" class="section">
-          <h2> Education </h2> <hr>
-            <ul>
-              <li> <strong>JSS Academy of Technical Education</strong>
-              <img class="educ" src="media/jss.jpg" align="right"></li>
-              Information Technology, B.Tech. <br>
-              2016-2020
-              <br><br>
-              <li> <strong>Vanasthali Public School, Noida</strong>
-              <img class="educ" src="media/vps.png" align="right"></li></li>
-              Science, XII   <br>
-              2002-2016
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="#about">Back to Top</a></li>
+              <li>Made with <img src="images/heart.png"> and  <img src="images/coffee.png">  by Mayank Chauhan</li>
             </ul>
-        </div>
+          </div>
 
-        <div id="skills" class="section">
-          <h2> Skills </h2> <hr>
-            <ul>
-              <li> <strong> Programming</strong></li>
-                <ul> 
-                  <li> Python (GUI, Web Scraping)   </li>
-                   
+        </footer>   
 
-                         
-                  <li> C </li>
-                </ul>
-              <li><strong> Web Development</strong></li>
-                <ul> 
-                  <li>HTML </li>
-                  <li>CSS</li>
-                  <li>Javascript </li>
-                  <li>Bootstrap</li>
-                </ul>
-              <li><strong> Others</strong></li>
-                <ul> 
-                  <li>MySQL </li>     
-                </ul>
-            </ul>
-        </div>
+      </main>
 
-        <div id="projects" class="section">
-          <h2> Projects  </h2> <hr>
-              <p> Only this site for now.</p>
-        </div>
-
-
-        <div id="contact" class="section">
-          <h2> Contact Me </h2> <hr>
-          <p> E-mail me at:</p> 
-          <p class='email'> mayank.chauhan15@gmail.com </p>
-
-  	      <div class="social">
-
-    		  	<a href="https://github.com/mak-chan" target="_blank">
-    	         <span class="fa-stack fa-2x">
-    	          <i class="fa fa-square fa-stack-2x git"></i>
-    	          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-    	         </span>  
-    		    </a>
-
-    		     <a href="https://www.facebook.com/MakChan15" target="_blank">
-    		        <span class="fa-stack fa-2x">
-    		          <i class="fa fa-square fa-stack-2x face"></i>
-    		          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>   
-    		        </span>           
-    		     </a>
-
-    		     <a href="https://twitter.com/MakChan15" target="_blank">
-    		        <span class="fa fa-stack fa-2x">
-    		          <i class="fa fa-square fa-stack-2x twit"></i>
-    		          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> 
-    		        </span>
-    		     </a>
-
-    		     <a href="https://www.linkedin.com/in/makchan15/" target="_blank">
-    		        <span class="fa fa-stack  fa-2x">
-    		          <i class="fa fa-square fa-stack-2x link"></i>
-    		          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>                 
-    		        </span>
-    		     </a>      
-
-    		     <a href="https://plus.google.com/u/0/+MayankChauhan15" target="_blank">
-    		        <span class="fa fa-stack  fa-2x">
-    		          <i class="fa fa-square fa-stack-2x goog"></i>
-    		          <i class="fa fa-google fa-stack-1x fa-inverse"></i>                 
-    		        </span>
-    		     </a> 
-	      
-	      	</div>   
-        </div>   <!-- contact ends here-->
-      </div> <!-- container ends here-->
-    </div> <!-- wrapper ends here-->
-
-    
-
-    <div class="footer">
-      <p>
-        <a href="#wrapper">Back to top</a>
-      </p>
-      <p>Ⓒ Mayank Chauhan</p>
     </div>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-91923447-1', 'auto');
-	ga('send', 'pageview');
-    </script>
- 
+
+
+    <script src="mdl/material.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>   
+    <script src="js/script.js"></script>
   </body>
+
 </html>

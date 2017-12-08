@@ -1,0 +1,149 @@
+.body {
+	font-family: "Open Sans";
+}
+
+.mdl-layout__header-row, .section {
+  width: 75%;
+  margin: 0 auto
+}
+
+
+
+.mdl-layout__drawer {
+	top: 56px
+}
+
+.mdl-layout-title {
+  font-family: "Lato";
+  font-size: 2.5rem;
+  font-weight: 250;
+  text-transform: lowercase;
+  letter-spacing: -2px;
+}
+
+.section {
+  min-height: 300px;
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
+
+.about-content, .about-pic {
+  padding: 120px 40px 40px 40px;
+}
+
+h2, p {
+  text-align: center;
+}
+.about-content > p {
+  font-size: 1.7rem;
+  letter-spacing: .6px;
+  line-height: 28px;
+}
+
+.display-pic > img {
+  border-radius: 45%;
+}
+.education-content > h2 {
+	margin: 280px auto;
+}
+.education-card {
+	width: 100%;
+	margin-bottom: 50px;
+}
+.education-icon {
+    margin: 30px;
+    border-radius: 50%
+}
+
+.skills-title {
+	padding: 20px;
+	font-size: 2rem;
+}
+
+.skills-name {
+/*	width: 70px;*/
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.2rem;
+}
+.skills-img {
+	padding: 4px
+}
+
+.skills-text {
+	padding-left: 20px;
+	line-height: 30px;
+}
+
+i {
+	margin: -3px;
+}
+.contact-section {
+	text-align: center;
+}
+.contact-section > a > img {
+	width: 80px;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+/*.mdl-mini-footer__link-list > li {
+	text-align: center
+}*/
+
+.contact-section {
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.mdl-layout__drawer, .mdl-layout__drawer-button {
+		display: none;
+	}
+}
+
+
+
+@media only screen and (max-width: 640px) {
+	.section {
+		width: 100%;
+		min-height: 200px;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	
+	.about-content, .about-pic {
+		padding: 20px;
+	}
+	.display-pic {
+		text-align: center;
+	}
+	.display-pic > img{
+		text-align: center;
+		width: 50%;
+	}
+	.education-content > h2 {
+		margin: 0px
+	}
+	.skills-text {
+		padding: 0px;
+	}
+	.skills-name {
+		padding:0px;
+		margin:6px;
+	}
+	.contact-section > a > img {
+		width: 50px;
+	}
+	.mdl-grid {
+		padding: 0px;
+	}
+	.skills-list {
+		padding-left: 8px;
+	}
+	.contact-section {
+		margin-top: 30px;
+		margin-bottom: 80px;
+	}
+}
