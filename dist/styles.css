@@ -1,0 +1,89 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css");
+@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@font-face {
+  font-family: Sans;
+  src: url(assets/Sans.ttf); }
+
+body {
+  font-family: 'Sans', monospace; }
+
+#main {
+  max-width: 992px;
+  margin: auto; }
+
+#title-block {
+  height: 200px;
+  background: #f7f7f7;
+  padding-left: 50px;
+  padding-right: 50px; }
+  #title-block .row {
+    margin: 0;
+    padding: 0; }
+  #title-block .name {
+    padding-top: 60px;
+    text-transform: uppercase; }
+  #title-block .details {
+    position: relative;
+    bottom: 0;
+    font-size: 19px;
+    padding-top: 10px;
+    text-align: right; }
+    #title-block .details div {
+      padding-bottom: 2px; }
+    #title-block .details a {
+      color: #77448a; }
+    #title-block .details i {
+      padding-left: 20px;
+      font-size: 19px;
+      color: #77448a;
+      vertical-align: middle; }
+    #title-block .details .fas {
+      font-size: 15px; }
+
+#content-block {
+  padding-top: 30px;
+  padding-left: 60px;
+  padding-right: 60px; }
+  #content-block h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase; }
+  #content-block h1:after {
+    content: "";
+    display: block;
+    background: #77448a;
+    height: 4px;
+    width: 15%; }
+  #content-block .col-2nd {
+    padding-left: 40px; }
+  #content-block div.ob-desc {
+    font-size: 22px;
+    line-height: 1.7rem; }
+  #content-block div.title {
+    font-size: 22px;
+    color: #77448a;
+    font-weight: 600; }
+    #content-block div.title a, #content-block div.title span {
+      color: #4b4b4b; }
+    #content-block div.title a {
+      text-decoration: underline; }
+  #content-block div.time {
+    font-size: 20px; }
+  #content-block span.time {
+    font-size: 20px;
+    font-weight: 400; }
+  #content-block div.desc {
+    font-size: 19px;
+    color: #4b4b4b;
+    line-height: 1.7rem; }
+  #content-block div.link a {
+    font-size: 19px;
+    color: #77448a; }
+  #content-block td {
+    padding: 2px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    vertical-align: top; }
+  #content-block .pr {
+    color: #77448a; }

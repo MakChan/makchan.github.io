@@ -1,0 +1,139 @@
+
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
+@import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@font-face {
+    font-family: Sans;
+    src: url(assets/Sans.ttf);
+}
+
+$primary-color: #77448a;
+$sec-color: #4b4b4b;
+
+
+body {
+    font-family: 'Sans', monospace;
+}
+#main {    
+    max-width: 992px;
+    margin: auto;
+}
+
+
+#title-block {  
+    height: 200px;
+    background: #f7f7f7;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .name {
+        padding-top: 60px;
+        text-transform: uppercase;
+    }
+
+    .details {
+        position: relative;
+        bottom: 0;
+        font-size: 19px;
+        padding-top: 10px;
+        text-align: right;
+
+        div {
+            padding-bottom: 2px;
+        }
+
+        a {
+            color: $primary-color
+        }
+
+        i {
+            padding-left: 20px;            
+            font-size: 19px;
+            color: $primary-color;
+            vertical-align: middle;
+        }
+
+        .fas {
+            font-size: 15px;
+        }
+    }
+}
+
+
+#content-block {  
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    h1 {
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    h1:after {
+        content: "";
+        display: block;
+        background: $primary-color;
+        height: 4px;
+        width: 15%;
+    }
+
+    .col-2nd {
+        padding-left: 40px;
+    }
+
+    div.ob-desc {
+        font-size: 22px;
+        line-height: 1.7rem;
+    }
+
+    div.title {
+        font-size: 22px;
+        color: $primary-color;
+        font-weight: 600;
+
+        a, span {
+            color: $sec-color
+        }
+        a {
+            text-decoration: underline
+        }
+    }
+    div.time {
+        font-size: 20px;
+    }
+    span.time {
+        font-size: 20px;        
+        font-weight: 400
+    }
+
+    div.desc {
+        font-size: 19px;
+        color: $sec-color;
+        line-height: 1.7rem;        
+    }
+
+    div.link a {
+        font-size: 19px;
+        color: $primary-color;      
+    }
+
+    td {
+        padding: 2px;
+        padding-bottom: 10px;
+        font-size: 20px;  
+        vertical-align: top;
+
+    }
+
+    .pr {
+        color: $primary-color;  
+    }
+}
+
