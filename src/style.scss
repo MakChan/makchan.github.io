@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @font-face {
     font-family: Sans;
-    src: url(assets/Sans.ttf);
+    src: url( /src/assets/fonts/Product_Sans_Regular.ttf);
 }
 
 $primary-color: #77448a;
@@ -12,28 +12,32 @@ $sec-color: #4b4b4b;
 
 
 body {
+    font-size: 16px;
     font-family: 'Sans', monospace;
-}
-#main {    
     max-width: 992px;
     margin: auto;
 }
 
 
-#title-block {  
-    height: 200px;
-    background: #f7f7f7;
-    padding-left: 50px;
-    padding-right: 50px;
+.row {
+    margin: 0;
+}
 
-    .row {
-        margin: 0;
-        padding: 0;
-    }
+
+header {  
+    min-height: 200px;
+    background: #f7f7f7;
+    padding : 0 3rem;
+
 
     .name {
         padding-top: 60px;
         text-transform: uppercase;
+
+        &> div:nth-of-type(2) {
+            background: #424242;
+            color: #fff
+        }
     }
 
     .details {
@@ -65,7 +69,7 @@ body {
 }
 
 
-#content-block {  
+main {  
     padding-top: 30px;
     padding-left: 60px;
     padding-right: 60px;
@@ -82,10 +86,6 @@ body {
         background: $primary-color;
         height: 4px;
         width: 15%;
-    }
-
-    .col-2nd {
-        padding-left: 40px;
     }
 
     div.ob-desc {
@@ -137,3 +137,42 @@ body {
     }
 }
 
+
+
+footer {
+    min-height: 5rem;
+    margin-top: 5rem;
+    color: #d9d9d9;
+    text-align: center;
+    background-color: #424242;
+
+    &> div {
+        padding-top: 2rem;
+    }
+}
+
+
+::selection {
+    background-color: #424242;
+    color: #fff;
+}
+
+::-moz-selection {
+    background-color: #424242;
+    color: #fff;
+}
+
+::-o-selection {
+    background-color: #424242;
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: #424242;
+    color: #fff;
+}
+
+::-webkit-selection {
+    background-color: #424242;
+    color: #fff;
+}

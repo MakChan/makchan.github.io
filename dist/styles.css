@@ -3,87 +3,115 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @font-face {
   font-family: Sans;
-  src: url(assets/Sans.ttf); }
+  src: url(/src/assets/fonts/Product_Sans_Regular.ttf); }
 
 body {
-  font-family: 'Sans', monospace; }
-
-#main {
+  font-size: 16px;
+  font-family: 'Sans', monospace;
   max-width: 992px;
   margin: auto; }
 
-#title-block {
-  height: 200px;
+.row {
+  margin: 0; }
+
+header {
+  min-height: 200px;
   background: #f7f7f7;
-  padding-left: 50px;
-  padding-right: 50px; }
-  #title-block .row {
-    margin: 0;
-    padding: 0; }
-  #title-block .name {
+  padding: 0 3rem; }
+  header .name {
     padding-top: 60px;
     text-transform: uppercase; }
-  #title-block .details {
+    header .name > div:nth-of-type(2) {
+      background: #424242;
+      color: #fff; }
+  header .details {
     position: relative;
     bottom: 0;
     font-size: 19px;
     padding-top: 10px;
     text-align: right; }
-    #title-block .details div {
+    header .details div {
       padding-bottom: 2px; }
-    #title-block .details a {
+    header .details a {
       color: #77448a; }
-    #title-block .details i {
+    header .details i {
       padding-left: 20px;
       font-size: 19px;
       color: #77448a;
       vertical-align: middle; }
-    #title-block .details .fas {
+    header .details .fas {
       font-size: 15px; }
 
-#content-block {
+main {
   padding-top: 30px;
   padding-left: 60px;
   padding-right: 60px; }
-  #content-block h1 {
+  main h1 {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase; }
-  #content-block h1:after {
+  main h1:after {
     content: "";
     display: block;
     background: #77448a;
     height: 4px;
     width: 15%; }
-  #content-block .col-2nd {
-    padding-left: 40px; }
-  #content-block div.ob-desc {
+  main div.ob-desc {
     font-size: 22px;
     line-height: 1.7rem; }
-  #content-block div.title {
+  main div.title {
     font-size: 22px;
     color: #77448a;
     font-weight: 600; }
-    #content-block div.title a, #content-block div.title span {
+    main div.title a, main div.title span {
       color: #4b4b4b; }
-    #content-block div.title a {
+    main div.title a {
       text-decoration: underline; }
-  #content-block div.time {
+  main div.time {
     font-size: 20px; }
-  #content-block span.time {
+  main span.time {
     font-size: 20px;
     font-weight: 400; }
-  #content-block div.desc {
+  main div.desc {
     font-size: 19px;
     color: #4b4b4b;
     line-height: 1.7rem; }
-  #content-block div.link a {
+  main div.link a {
     font-size: 19px;
     color: #77448a; }
-  #content-block td {
+  main td {
     padding: 2px;
     padding-bottom: 10px;
     font-size: 20px;
     vertical-align: top; }
-  #content-block .pr {
+  main .pr {
     color: #77448a; }
+
+footer {
+  min-height: 5rem;
+  margin-top: 5rem;
+  color: #d9d9d9;
+  text-align: center;
+  background-color: #424242; }
+  footer > div {
+    padding-top: 2rem; }
+
+::selection {
+  background-color: #424242;
+  color: #fff; }
+
+::-moz-selection {
+  background-color: #424242;
+  color: #fff; }
+
+::-o-selection {
+  background-color: #424242;
+  color: #fff; }
+
+::-ms-selection {
+  background-color: #424242;
+  color: #fff; }
+
+::-webkit-selection {
+  background-color: #424242;
+  color: #fff; }

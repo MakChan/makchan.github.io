@@ -6,10 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "pug src --out ./ --watch",
-    "sass": "node-sass src/style.scss src/styles.css --watch",
+    "build-pug":  "pug src --out ./",
+    "sass": "node-sass src/style.scss ./dist/styles.css --watch",
     "build-css": "node-sass src/style.scss dist/styles.css",
-    "start": "npm-run-all --parallel pug sass",
-    "build": ""
+    "run": "live-server",
+    "start": "npm-run-all --parallel pug sass run",
+    "build": "npm-run-all build-pug build-sass"
   },
   "repository": {
     "type": "git",
