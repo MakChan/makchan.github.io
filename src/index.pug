@@ -10,122 +10,137 @@ html(lang="en")
         header.row
             .col-md-6.name
                 .display-4.d-inline-block.d-md-block Mayank 
-                .display-4.font-weight-bold Chauhan
+                .display-4.d-inline-block.font-weight-bold Chauhan
 
             .col-md-6.details
                 div Noida
-                    i.material-icons home
+                    svg
+                        use(xlink:href="/dist/img/icons.svg#home")
                 div 9015138234
-                    i.fas.fa-phone
+                    svg.phone
+                        use(xlink:href="/dist/img/icons.svg#phone")
                 div mayank.chauhan15@gmail.com
-                    i.material-icons email
+                    svg
+                        use(xlink:href="/dist/img/icons.svg#envelope")
                 div 
                     a(href='https://www.linkedin.com/in/makchan15/') linkedin.com/in/makchan15
-                    i.fab.fa-linkedin-in
+                    svg
+                        use(xlink:href="/dist/img/icons.svg#linkedin")
                 div 
                     a(href='http://mayankchauhan.tech/') mayankchauhan.tech
-                    i.fas.fa-globe
+                    svg
+                        use(xlink:href="/dist/img/icons.svg#globe")
                 div 
                     a(href='https://github.com/MakChan') github.com/MakChan
-                    i.fab.fa-github
+                    svg
+                        use(xlink:href="/dist/img/icons.svg#github")
 
         main.row
             .col-md-6
-                h1.mb-3 Objectives                     
-                div.ob-desc 
-                    | To obtain a position as a Web Developer
-                    | where I can utilize my skills, abilities and
-                    | strong dedication to design and
-                    | develop innovative projects.
+                section
+                    h1.mb-3 Objectives                     
+                    div.ob-desc 
+                        | To obtain a position as a Web Developer
+                        | where I can utilize my skills, abilities and
+                        | strong dedication to design and
+                        | develop innovative projects.
 
-                h1.mt-5.mb-3 Experience
+                section
+                    h1.mt-5.mb-3 Experience
 
-                div.title Frontend Intern | 
-                    a(href = 'https://isitca.com/') ISITCA
-                div.time June 2018 - Present
-                div.desc Working on HTML, CSS, JS and Vue.
+                    div.title Frontend Intern | 
+                        a(href = 'https://isitca.com/') ISITCA
+                    div.time June 2018 - Present
+                    div.desc Working on HTML, CSS, JS and Vue.
 
-                div.title.mt-3 Frontend Intern | 
-                    a(href = 'http://zester.in') Zester
-                div.time April 2018 - Present
-                div.desc Working on Angular/React Projects.
-
-
-                div.title.mt-3 Google Developer Group, JSS Noida
-                div.time February 2017 - Present
-                div.desc 
-                    | I help organize coding events namely                        
-                    | workshops, hackathons, competitions,
-                    | and make websites for such events.
+                    div.title.mt-3 Frontend Intern | 
+                        a(href = 'http://zester.in') Zester
+                    div.time April 2018 - Present
+                    div.desc Working on Angular/React Projects.
 
 
-                h1.mt-5.mb-3 Education
+                    div.title.mt-3 Google Developer Group, JSS Noida
+                    div.time February 2017 - Present
+                    div.desc 
+                        | I help organize coding events namely                        
+                        | workshops, hackathons, competitions,
+                        | and make websites for such events.
 
-                div.title B.TECH. | 
-                    span AKTU
-                div.time 2016 - 2020, Information Technology
-                div.desc JSS Academy of Technical Education, Noida
 
-                div.title.mt-3 CLASS XII | 
-                    span CBSE
-                div.time 2016, 91.2%
-                div.desc Vanasthali Public School, Noida
+                section
+                    h1.mt-5.mb-3 Education
 
-                div.title.mt-3 CLASS X | 
-                    span CBSE
-                div.time 2014, CGPA: 9.8/10
-                div.desc Vanasthali Public School, Noida
+                    div.title B.TECH. | 
+                        span AKTU
+                    div.time 2016 - 2020, Information Technology
+                    div.desc JSS Academy of Technical Education, Noida
+
+                    div.title.mt-3 CLASS XII | 
+                        span CBSE
+                    div.time 2016, 91.2%
+                    div.desc Vanasthali Public School, Noida
+
+                    div.title.mt-3 CLASS X | 
+                        span CBSE
+                    div.time 2014, CGPA: 9.8/10
+                    div.desc Vanasthali Public School, Noida
 
 
             .col-md-6.pl-md-5
 
-                        h1.mb-3.mt-5.mt-md-0 Projects
+                section
+                    h1.mb-3.mt-5.mt-md-0 Projects
 
-                        div.title Noticeboard | 
-                            span Django | 
-                            span.time Feb 2018
-                        div.desc Website for posting notices for a school or college.
-                        div.link 
-                            a(href = 'https://github.com/MakChan/noticeboard') github.com/MakChan/noticeboard
+                    div.title Noticeboard | 
+                        span Django | 
+                        span.time Feb 2018
+                    div.desc Website for posting notices for a school or college.
+                    div.link 
+                        a(href = 'https://github.com/MakChan/noticeboard') github.com/MakChan/noticeboard
 
-                        div.title.mt-3 Mini-Blog | 
-                            span Flask | 
-                            span.time Nov 2017
-                        div.desc A multi-user blogging application.
-                        div.link 
-                            a(href = 'https://github.com/MakChan/blog-flask') github.com/MakChan/blog-flask
+                    div.title.mt-3 Mini-Blog | 
+                        span Flask | 
+                        span.time Nov 2017
+                    div.desc A multi-user blogging application.
+                    div.link 
+                        a(href = 'https://github.com/MakChan/blog-flask') github.com/MakChan/blog-flask
 
-                        div.title.mt-3 Personal Website | 
-                            span HTML, CSS | 
-                            span.time Dec 2017
-                        div.desc Portfolio on GitHub Pages.
-                        div.link 
-                            a(href = 'https://github.com/MakChan/makchan.github.io') github.com/MakChan/makchan.github.io
+                    div.title.mt-3 Personal Website | 
+                        span HTML, CSS | 
+                        span.time Dec 2017
+                    div.desc Portfolio on GitHub Pages.
+                    div.link 
+                        a(href = 'https://github.com/MakChan/makchan.github.io') github.com/MakChan/makchan.github.io
 
 
-                        h1.mt-5.mb-3 Skills
+                section
+                    h1.mt-5.mb-3 Skills
 
-                        table
-                            tr
-                                td.pr Languages
-                                td.pl-3 Python, C
-                            tr
-                                td.pr Web Design
-                                td.pl-3 HTML, Pug, CSS, SASS, JavaScript
-                            tr
-                                td.pr Frameworks
-                                td.pl-3 Vue, React, Django, Flask, Angular, Bootstrap, jQuery
-                            tr
-                                td.pr Tools
-                                td.pl-3 Git, Gulp, Webpack, Heroku, Google Cloud
-                            tr
-                                td.pr Databases
-                                td.pl-3 MySQL, SQLite
+                    table
+                        tr
+                            td.pr Languages
+                            td.pl-3 Python, C
+                        tr
+                            td.pr Web Design
+                            td.pl-3 HTML, Pug, CSS, SASS, JavaScript
+                        tr
+                            td.pr Frameworks
+                            td.pl-3 Vue, React, Django, Flask, Angular, Bootstrap, jQuery
+                        tr
+                            td.pr Tools
+                            td.pl-3 Git, Gulp, Webpack, Heroku, Google Cloud
+                        tr
+                            td.pr Databases
+                            td.pl-3 MySQL, SQLite
 
         footer
             div Made with 
-                img(src = "/src/assets/images/heart.png" alt = "heart")/ and  
-                img(src = "/src/assets/images/coffee.png" alt = "coffee")/ by Mayank Chauhan
+                svg.heart
+                    use(xlink:href="/dist/img/icons.svg#heart")    
+                | and  
+                svg
+                    use(xlink:href="/dist/img/icons.svg#coffee")    
+                | by Mayank Chauhan
 
 
 

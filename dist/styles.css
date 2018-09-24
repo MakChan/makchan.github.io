@@ -1,15 +1,11 @@
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css");
-@import url("https://use.fontawesome.com/releases/v5.0.13/css/all.css");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @font-face {
   font-family: Sans;
   src: url(/src/assets/fonts/Product_Sans_Regular.ttf); }
 
 body {
-  font-size: 16px;
-  font-family: 'Sans', monospace;
+  font-family: 'Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   max-width: 992px;
-  margin: auto; }
+  margin: 0 auto; }
 
 .row {
   margin: 0; }
@@ -18,29 +14,29 @@ header {
   min-height: 200px;
   background: #f7f7f7;
   padding: 0 3rem; }
-  header .name {
-    padding-top: 60px;
-    text-transform: uppercase; }
-    header .name > div:nth-of-type(2) {
-      background: #424242;
-      color: #fff; }
-  header .details {
-    position: relative;
-    bottom: 0;
-    font-size: 19px;
-    padding-top: 10px;
-    text-align: right; }
-    header .details div {
-      padding-bottom: 2px; }
-    header .details a {
-      color: #77448a; }
-    header .details i {
-      padding-left: 20px;
-      font-size: 19px;
-      color: #77448a;
-      vertical-align: middle; }
-    header .details .fas {
-      font-size: 15px; }
+
+.name {
+  margin-top: auto;
+  text-transform: uppercase; }
+  .name > div:nth-of-type(2) {
+    background: #424242;
+    color: #fff; }
+
+.details {
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  text-align: right; }
+  .details div {
+    padding-bottom: 2px; }
+  .details a {
+    color: #77448a; }
+  .details svg {
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+    color: #77448a;
+    margin-left: 15px; }
 
 main {
   padding-top: 30px;
@@ -63,7 +59,8 @@ main {
     font-size: 22px;
     color: #77448a;
     font-weight: 600; }
-    main div.title a, main div.title span {
+    main div.title a,
+    main div.title span {
       color: #4b4b4b; }
     main div.title a {
       text-decoration: underline; }
@@ -73,11 +70,9 @@ main {
     font-size: 20px;
     font-weight: 400; }
   main div.desc {
-    font-size: 19px;
     color: #4b4b4b;
     line-height: 1.7rem; }
   main div.link a {
-    font-size: 19px;
     color: #77448a; }
   main td {
     padding: 2px;
@@ -94,7 +89,106 @@ footer {
   text-align: center;
   background-color: #424242; }
   footer > div {
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    font-size: 1rem; }
+  footer svg {
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+    color: inherit;
+    margin: 0 4px; }
+
+.phone,
+.heart {
+  width: 17px !important;
+  height: 17px !important; }
+
+.d-inline-block {
+  display: inline-block; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+  .row .col-md-6 {
+    position: relative;
+    width: 100%; }
+
+.mb-3 {
+  margin-bottom: 1rem; }
+
+.mt-3 {
+  margin-top: 1rem; }
+
+.mt-5 {
+  margin-top: 3rem; }
+
+.pl-3 {
+  padding-left: 1rem; }
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2; }
+
+@media screen and (min-width: 768px) {
+  .pl-md-5 {
+    padding-left: 3rem; }
+  .mt-md-0 {
+    margin-top: 0; }
+  .d-md-block {
+    display: block; }
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%; } }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+  a:hover {
+    text-decoration: underline; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+body {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff; }
+
+footer,
+header,
+main,
+section {
+  display: block; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
 
 ::selection {
   background-color: #424242;
