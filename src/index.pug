@@ -13,40 +13,23 @@ html(lang="en")
                 .display-4.d-inline-block.font-weight-bold Chauhan
 
             .col-md-6.details
-                div Noida
-                    svg
-                        use(xlink:href="/dist/img/icons.svg#home")
-                div 9015138234
-                    svg.phone
-                        use(xlink:href="/dist/img/icons.svg#phone")
-                div mayank.chauhan15@gmail.com
-                    svg
-                        use(xlink:href="/dist/img/icons.svg#envelope")
-                div 
-                    a(href='https://www.linkedin.com/in/makchan15/') linkedin.com/in/makchan15
-                    svg
-                        use(xlink:href="/dist/img/icons.svg#linkedin")
-                div 
-                    a(href='http://mayankchauhan.tech/') mayankchauhan.tech
-                    svg
-                        use(xlink:href="/dist/img/icons.svg#globe")
-                div 
-                    a(href='https://github.com/MakChan') github.com/MakChan
-                    svg
-                        use(xlink:href="/dist/img/icons.svg#github")
+                span 
+                    a(href='https://www.linkedin.com/in/makchan15/').icons
+                        svg
+                            use(xlink:href="/dist/img/icons.svg#linkedin")
+
+                span 
+                    a(href='https://github.com/MakChan').icons
+                        svg
+                            use(xlink:href="/dist/img/icons.svg#github")
+                //- div mayank.chauhan15@gmail.com
+
+
 
         main.row
             .col-md-6
                 section
-                    h1.mb-3 Objectives                     
-                    div.ob-desc 
-                        | To obtain a position as a Web Developer
-                        | where I can utilize my skills, abilities and
-                        | strong dedication to design and
-                        | develop innovative projects.
-
-                section
-                    h1.mt-5.mb-3 Experience
+                    h1.mb-3.mt-5.mt-md-0 Experience
 
                     div.title Frontend Intern | 
                         a(href = 'https://isitca.com/') ISITCA
@@ -89,32 +72,7 @@ html(lang="en")
             .col-md-6.pl-md-5
 
                 section
-                    h1.mb-3.mt-5.mt-md-0 Projects
-
-                    div.title Noticeboard | 
-                        span Django | 
-                        span.time Feb 2018
-                    div.desc Website for posting notices for a school or college.
-                    div.link 
-                        a(href = 'https://github.com/MakChan/noticeboard') github.com/MakChan/noticeboard
-
-                    div.title.mt-3 Mini-Blog | 
-                        span Flask | 
-                        span.time Nov 2017
-                    div.desc A multi-user blogging application.
-                    div.link 
-                        a(href = 'https://github.com/MakChan/blog-flask') github.com/MakChan/blog-flask
-
-                    div.title.mt-3 Personal Website | 
-                        span HTML, CSS | 
-                        span.time Dec 2017
-                    div.desc Portfolio on GitHub Pages.
-                    div.link 
-                        a(href = 'https://github.com/MakChan/makchan.github.io') github.com/MakChan/makchan.github.io
-
-
-                section
-                    h1.mt-5.mb-3 Skills
+                    h1.mb-3.mt-5.mt-md-0 Skills
 
                     table
                         tr
@@ -132,6 +90,28 @@ html(lang="en")
                         tr
                             td.pr Databases
                             td.pl-3 MySQL, SQLite
+                section
+                    h1.mt-5.mb-3 Projects
+
+                    div.title Noticeboard | 
+                        span Django
+                    div.desc Website for posting notices for a school or college.
+                    div.link 
+                        a(href = 'https://github.com/MakChan/noticeboard') github.com/MakChan/noticeboard
+
+                    div.title.mt-3 Mini-Blog | 
+                        span Flask
+                    div.desc A multi-user blogging application.
+                    div.link 
+                        a(href = 'https://github.com/MakChan/blog-flask') github.com/MakChan/blog-flask
+
+                    div.title.mt-3 Personal Website | 
+                        span Pug, SASS
+                    div.desc Portfolio on GitHub Pages.
+                    div.link 
+                        a(href = 'https://github.com/MakChan/makchan.github.io') github.com/MakChan/makchan.github.io
+
+
 
         footer
             div Made with 
