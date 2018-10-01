@@ -4,7 +4,9 @@ html(lang="en")
     head
         title Mayank Chauhan
         meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-        link(rel='stylesheet', href='/dist/styles.css')
+        meta(name="description" content="Mayank Chauhan: Fullstack Web Developer")
+        meta(name="author" content="Mayank Chauhan")
+        link(rel='stylesheet' href='/dist/css/styles.css')
 
     body
         header.row
@@ -14,18 +16,14 @@ html(lang="en")
 
             .col-md-6.details
                 span 
-                    a(href='https://www.linkedin.com/in/makchan15/').icons
+                    a(href='https://www.linkedin.com/in/makchan15/' aria-label="linkedin").icons
                         svg
                             use(xlink:href="/dist/img/icons.svg#linkedin")
 
                 span 
-                    a(href='https://github.com/MakChan').icons
+                    a(href='https://github.com/MakChan' aria-label="github").icons
                         svg
                             use(xlink:href="/dist/img/icons.svg#github")
-                //- div mayank.chauhan15@gmail.com
-
-
-
         main.row
             .col-md-6
                 section
@@ -48,7 +46,6 @@ html(lang="en")
                         | I help organize coding events namely                        
                         | workshops, hackathons, competitions,
                         | and make websites for such events.
-
 
                 section
                     h1.mt-5.mb-3 Education
@@ -111,14 +108,14 @@ html(lang="en")
                     div.link 
                         a(href = 'https://github.com/MakChan/makchan.github.io') github.com/MakChan/makchan.github.io
 
-
-
         footer
             div Made with 
                 svg.heart
+                    title love
                     use(xlink:href="/dist/img/icons.svg#heart")    
                 | and  
                 svg
+                    title coffee
                     use(xlink:href="/dist/img/icons.svg#coffee")    
                 | by Mayank Chauhan
 
