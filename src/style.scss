@@ -4,7 +4,7 @@
   font-family: Sans;
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: auto;
   src: url(/dist/fonts/Sans.woff2) format("woff2"),
     url(/dist/fonts/Sans.ttf) format("truetype");
 }
@@ -113,6 +113,7 @@ header {
   }
   a:hover {
     color: $primary-color;
+    transform: scale(1.1)
   }
   svg {
     width: 19px;
@@ -248,6 +249,9 @@ footer {
 
 .pl-3 {
   padding-left: 1rem;
+}
+.pr-3 {
+  padding-right: 1rem;
 }
 
 .display-4 {
