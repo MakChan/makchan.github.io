@@ -1,19 +1,27 @@
-// Resources
-
-@font-face {
-  font-family: Sans;
-  font-style: normal;
-  font-weight: 400;
-  font-display: auto;
-  src: url(/dist/fonts/Sans.woff2) format("woff2"),
-    url(/dist/fonts/Sans.ttf) format("truetype");
-}
 
 // Variables
 
 $primary-color: #77448a;
 $sec-color: #4b4b4b;
 $dark: #424242;
+$font-family-sans-serif:
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  "Roboto",
+  "Helvetica Neue", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+// Mixins
+
+@mixin dots($color) {
+  background:
+    radial-gradient($color 20%, transparent 19%),
+    radial-gradient($color 20%, transparent 19%),
+    transparent;
+  background-size: 6px 6px;
+  background-position: 0 0, 3px 3px;
+}
 
 // Reboot
 
@@ -36,10 +44,6 @@ a {
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 svg:not(:root) {
@@ -69,7 +73,7 @@ hr {
 // Main stlyes
 
 body {
-  font-family: "Sans", Roboto, "Helvetica Neue", "Helvetica", "Garamond";
+  font-family: "Questrial", $font-family-sans-serif;
   max-width: 992px;
   margin: 0 auto;
   font-size: 19px;
@@ -93,6 +97,7 @@ header {
 .name {
   margin-top: auto;
   text-transform: uppercase;
+  font-family: 'Fredericka the Great', cursive;
 
   & > div:nth-of-type(2) {
     background: $dark;

@@ -7,6 +7,14 @@ html(lang="en")
         meta(name="description" content="Mayank Chauhan: Fullstack Web Developer")
         meta(name="author" content="Mayank Chauhan")
         link(rel='stylesheet' href='/dist/css/styles.css')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fredericka+the+Great|Questrial')
+        script(async, defer, src="https://www.googletagmanager.com/gtag/js?id=UA-91923447-1")
+        script.
+            window.dataLayer = window.dataLayer || []
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date())
+            gtag('config', 'UA-91923447-1')
+  
 
     body
         header.row
@@ -19,6 +27,10 @@ html(lang="en")
                     a(href='https://www.linkedin.com/in/makchan15/' aria-label="linkedin").icons
                         svg
                             use(xlink:href="/dist/img/icons.svg#linkedin")
+                span 
+                    a(href='https://twitter.com/MakChan15' aria-label="twitter").icons
+                        svg
+                            use(xlink:href="/dist/img/icons.svg#twitter")
 
                 span 
                     a(href='https://github.com/MakChan' aria-label="github").icons
@@ -37,7 +49,7 @@ html(lang="en")
                     div.title Frontend Intern | 
                         a(href = 'https://isitca.com/') ISITCA
                     div.time June 2018 - Present
-                    div.desc Working on HTML, CSS, JS and Vue.
+                    div.desc Working on Laravel and Vue Projects.
 
                     div.title.mt-3 Frontend Intern | 
                         a(href = 'http://zester.in') Zester
@@ -85,13 +97,13 @@ html(lang="en")
                             td.pl-3 HTML, Pug, CSS, SASS
                         tr
                             td.pr Frameworks
-                            td.pl-3 Vue, React, Django, Flask, Angular, Bootstrap, Bulma, jQuery
+                            td.pl-3 React, Vue, Django, Django Rest Framework, Flask, Angular, Bootstrap, Bulma, jQuery. MDC
                         tr
                             td.pr Tools
                             td.pl-3 Git, Gulp, Webpack, Parcel
                         tr
                             td.pr Cloud
-                            td.pl-3 Google Cloud, Heroku
+                            td.pl-3 Google Cloud, AWS, Heroku
                         tr
                             td.pr Databases
                             td.pl-3 MySQL, SQLite   
@@ -103,6 +115,12 @@ html(lang="en")
                     div.desc Using HackerNews API and Context API.
                     div.link 
                         a(href = 'https://github.com/MakChan/hacker-news-react') github.com/MakChan/hacker-news-react
+
+                    div.title.mt-3 Blog | 
+                        span Django
+                    div.desc A full-fledged blogging application with comments, markdown & search.
+                    div.link 
+                        a(href = 'https://github.com/MakChan/blog-django') github.com/MakChan/blog-django
 
                     div.title.mt-3 Noticeboard | 
                         span Django
