@@ -4,10 +4,12 @@ html(lang="en")
     head
         title Mayank Chauhan
         meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-        meta(name="description" content="Mayank Chauhan: Fullstack Web Developer")
+        meta(name="description" content="Mayank Chauhan: Full-stack Web Developer")
         meta(name="author" content="Mayank Chauhan")
         link(rel='stylesheet' href='/dist/css/styles.css')
-        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fredericka+the+Great|Questrial')
+        
+        link(rel='preconnect' href='https://fonts.gstatic.com/' crossorigin)
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fredericka+the+Great|Questrial&display=swap')
         script(async, defer, src="https://www.googletagmanager.com/gtag/js?id=UA-91923447-1")
         script.
             window.dataLayer = window.dataLayer || []
@@ -15,57 +17,70 @@ html(lang="en")
             gtag('js', new Date())
             gtag('config', 'UA-91923447-1')
   
-
     body
         header.row
             .col-md-6.name
-                .display-4.d-inline-block.d-md-block Mayank 
-                .display-4.d-inline-block.font-weight-bold Chauhan
+                h1.display-4.d-inline-block.d-md-block Mayank
+                    br
+                    span.font-weight-bold Chauhan
 
             .col-md-6.details
                 span 
-                    a(href='https://www.linkedin.com/in/makchan15/' aria-label="linkedin").icons
+                    a(href='https://www.linkedin.com/in/makchan15/' aria-label="linkedin" target="_blank" rel="noopener").icons
                         svg
                             use(xlink:href="/dist/img/icons.svg#linkedin")
                 span 
-                    a(href='https://twitter.com/MakChan15' aria-label="twitter").icons
+                    a(href='https://twitter.com/MakChan15' aria-label="twitter" target="_blank" rel="noopener").icons
                         svg
                             use(xlink:href="/dist/img/icons.svg#twitter")
 
                 span 
-                    a(href='https://github.com/MakChan' aria-label="github").icons
+                    a(href='https://github.com/MakChan' aria-label="github" target="_blank" rel="noopener").icons
                         svg
                             use(xlink:href="/dist/img/icons.svg#github")
         main.row
             .col-md-6
                 section
-                    h1.mb-3.mt-5.mt-md-0 About
-
-                    div.pr-3 Aspiring Full-Stack Web Developer. Currently studying Information Technology. Likes Python and JavaScript.
+                    div.pr-3 Final-year engineering student looking for a 
+                        b frontend  
+                        | or 
+                        b fullstack 
+                        | role. I'm passionate about technologies like React, GraphQL, Serverless, and JAM Stack. I enjoy building web experiences that are accessible, intuitive, and performant.
 
                 section
-                    h1.mt-5.mb-3 Experience
+                    h2.mt-4.mb-3 Work Experience
 
-                    div.title Frontend Intern | 
-                        a(href = 'https://isitca.com/') ISITCA
-                    div.time June 2018 - Present
-                    div.desc Working on Laravel and Vue Projects.
+                    div.title Fullstack Developer Intern | 
+                        a(href = 'https://www.supplynote.in/' target="_blank" rel="noopener") Adcount Technologies
+                    div.time June 2019 - Present
+                    div.desc • Working on a SAAS + E-Commerce product that offers end-to-end supply chain management
+                    | solutions for restaurants and food chains.
+                    div • Stack: Angular, Node.js/Express, MongoDB
+
+                    div.title.mt-3  React Intern | 
+                        a() Tribeeco
+                    div.time Jan 2019 - April 2019
+                    div.desc • Built a social-media web application with React/Redux and Node.js/Express
+
+                    div.title.mt-3  Frontend Intern | 
+                        a(href = 'https://isitca.com/' target="_blank" rel="noopener") ISITCA
+                    div.time June 2018 - April 2019
+                    div.desc • Developed and implemented websites tailored to the needs of particular clients.
+                    div • Stack: JS, Vue, Hugo, Laravel
 
                     div.title.mt-3 Frontend Intern | 
-                        a(href = 'http://zester.in') Zester
-                    div.time April 2018 - Present
-                    div.desc Working on Angular/React Projects.
+                        a(href = 'http://zester.surge.sh' target="_blank" rel="noopener") Zester
+                    div.time April 2018 - Oct 2018
+                    div.desc • Built and worked on several projects in React, Angular, and HTML/CSS/JS.
 
 
-                    div.title.mt-3 Google Developer Group, JSS Noida
+                    div.title.mt-3 Developer Student Clubs JSS Noida
                     div.time February 2017 - Present
-                    div.desc 
-                        | I help organize coding events namely                        
-                        | workshops, hackathons, competitions,
-                        | and make websites for such events.
-
+                    div.desc • I help organize events such as                        
+                        | workshops, hackathons, and coding competitions.
+                        
                 section
-                    h1.mt-5.mb-3 Education
+                    h2.mt-5.mb-3 Education
 
                     div.title B.TECH. | 
                         span AKTU
@@ -74,7 +89,7 @@ html(lang="en")
 
                     div.title.mt-3 CLASS XII | 
                         span CBSE
-                    div.time 2016, 91.2%
+                    div.time 2016, 91.8%
                     div.desc Vanasthali Public School, Noida
 
                     div.title.mt-3 CLASS X | 
@@ -86,70 +101,70 @@ html(lang="en")
             .col-md-6.pl-md-5
 
                 section
-                    h1.mb-3.mt-5.mt-md-0 Skills
+                    h2.mb-3.mt-5.mt-md-0 Skills
 
-                    table
-                        tr
-                            td.pr Languages
-                            td.pl-3 Python, JavaScript, C
-                        tr
-                            td.pr Web Design
-                            td.pl-3 HTML, Pug, CSS, SASS
-                        tr
-                            td.pr Frameworks
-                            td.pl-3 React, Vue, Django, Django Rest Framework, Flask, Angular, Bootstrap, Bulma, jQuery. MDC
-                        tr
-                            td.pr Tools
-                            td.pl-3 Git, Gulp, Webpack, Parcel
-                        tr
-                            td.pr Cloud
-                            td.pl-3 Google Cloud, AWS, Heroku
-                        tr
-                            td.pr Databases
-                            td.pl-3 MySQL, SQLite   
+                    .flex.mb-2
+                        .skills-col-1.color-primary Frontend
+                        div React, Redux, Angular, Vue, GraphQL, CSS-in-JS, Hugo, Bootstrap, jQuery, SCSS, Pug
+                    .flex.mb-2
+                        .skills-col-1.color-primary Backend
+                        div Node.js/Express, Apollo Server, Django/Flask, Serverless
+                    .flex.mb-2
+                        .skills-col-1.color-primary Databases
+                        div MongoDB, PostgreSQL, MySQL
+                    .flex.mb-2
+                        .skills-col-1.color-primary Cloud
+                        div AWS, Google Cloud, Netlify, Zeit
+                    .flex.mb-2
+                        .skills-col-1.color-primary Tools
+                        div Git, Webpack, Parcel, Gulp
+                    .flex.mb-2
+                        .skills-col-1.color-primary Languages
+                        div Javascript, Python, C
+
                 section
-                    h1.mt-5.mb-3 Projects
+                    h2.mt-5.mb-3 Projects
 
-                    div.title Hacker News Clone | 
+                    div.title.mt-3 Rent Ledger | 
+                        span React, Apollo GraphQL
+                    div.desc Save tenants' info and keep track of payments.
+                    div.link 
+                        a(href = 'https://github.com/MakChan/rent-ledger' target="_blank" rel="noopener") github.com/MakChan/rent-ledger
+
+                    div.title.mt-3 Evento | 
+                        span Django, DRF, AWS
+                    div.desc View past and upcoming Events/Seminars/Workshops in your college.
+                    div.link 
+                        a(href = 'https://github.com/DSC-JSS-NOIDA/eventoapi' target="_blank" rel="noopener") github.com/DSC-JSS-NOIDA/eventoapi
+
+                    div.title.mt-3 Hacker News Clone | 
                         span React
                     div.desc Using HackerNews API and Context API.
                     div.link 
-                        a(href = 'https://github.com/MakChan/hacker-news-react') github.com/MakChan/hacker-news-react
+                        a(href = 'https://github.com/MakChan/hacker-news-react' target="_blank" rel="noopener") github.com/MakChan/hacker-news-react
 
                     div.title.mt-3 Blog | 
-                        span Django
+                        span Django, jQuery
                     div.desc A full-fledged blogging application with comments, markdown & search.
                     div.link 
-                        a(href = 'https://github.com/MakChan/blog-django') github.com/MakChan/blog-django
+                        a(href = 'https://github.com/MakChan/blog-django' target="_blank" rel="noopener") github.com/MakChan/blog-django
 
                     div.title.mt-3 Noticeboard | 
                         span Django
                     div.desc Website for posting notices for a school or college.
                     div.link 
-                        a(href = 'https://github.com/MakChan/noticeboard') github.com/MakChan/noticeboard
-
-                    div.title.mt-3 Mini-Blog | 
-                        span Flask
-                    div.desc A multi-user blogging application.
-                    div.link 
-                        a(href = 'https://github.com/MakChan/blog-flask') github.com/MakChan/blog-flask
-
-                    div.title.mt-3 Personal Website | 
-                        span Pug, SASS
-                    div.desc Portfolio on GitHub Pages.
-                    div.link 
-                        a(href = 'https://github.com/MakChan/makchan.github.io') github.com/MakChan/makchan.github.io
+                        a(href = 'https://github.com/MakChan/noticeboard' target="_blank" rel="noopener") github.com/MakChan/noticeboard
 
         footer
-            div Made with 
-                svg.heart
-                    title love
-                    use(xlink:href="/dist/img/icons.svg#heart")    
-                | and  
-                svg
-                    title coffee
-                    use(xlink:href="/dist/img/icons.svg#coffee")    
-                | by Mayank Chauhan
+            //- div Made with 
+            //-     svg.heart
+            //-         title love
+            //-         use(xlink:href="/dist/img/icons.svg#heart")    
+            //-     | and  
+            //-     svg
+            //-         title coffee
+            //-         use(xlink:href="/dist/img/icons.svg#coffee")    
+            //-     | by Mayank Chauhan
 
 
 

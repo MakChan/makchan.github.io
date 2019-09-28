@@ -1,27 +1,11 @@
-
 // Variables
 
 $primary-color: #77448a;
-$sec-color: #4b4b4b;
+$sec-color: #373737;
 $dark: #424242;
-$font-family-sans-serif:
-  -apple-system,
-  BlinkMacSystemFont,
-  "Segoe UI",
-  "Roboto",
-  "Helvetica Neue", Arial, sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-
-// Mixins
-
-@mixin dots($color) {
-  background:
-    radial-gradient($color 20%, transparent 19%),
-    radial-gradient($color 20%, transparent 19%),
-    transparent;
-  background-size: 6px 6px;
-  background-position: 0 0, 3px 3px;
-}
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol" !default;
 
 // Reboot
 
@@ -97,9 +81,9 @@ header {
 .name {
   margin-top: auto;
   text-transform: uppercase;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: "Fredericka the Great";
 
-  & > div:nth-of-type(2) {
+  span {
     background: $dark;
     color: #fff;
   }
@@ -118,7 +102,7 @@ header {
   }
   a:hover {
     color: $primary-color;
-    transform: scale(1.1)
+    transform: scale(1.1);
   }
   svg {
     width: 19px;
@@ -131,13 +115,13 @@ main {
   padding: 0 3rem;
   padding-top: 30px;
 
-  h1 {
-    font-size: 30px;
+  h2 {
+    font-size: 26px;
     font-weight: 600;
     text-transform: uppercase;
   }
 
-  h1:after {
+  h2:after {
     content: "";
     display: block;
     background: $primary-color;
@@ -145,13 +129,8 @@ main {
     width: 15%;
   }
 
-  div.ob-desc {
-    font-size: 22px;
-    line-height: 1.7rem;
-  }
-
-  div.title {
-    font-size: 22px;
+  .title {
+    font-size: 20px;
     color: $primary-color;
     font-weight: 600;
 
@@ -165,29 +144,24 @@ main {
     }
   }
 
-  div.time {
-    font-size: 20px;
+  .time {
+    font-size: 18px;
   }
 
-  div.desc {
+  .desc {
     color: $sec-color;
     line-height: 1.7rem;
   }
 
-  div.link a {
+  .link a {
     color: $primary-color;
   }
+}
 
-  td {
-    padding: 2px;
-    padding-bottom: 10px;
-    font-size: 20px;
-    vertical-align: top;
-  }
-
-  .pr {
-    color: $primary-color;
-  }
+.skills-col-1 {
+  min-width: 120px;
+  padding-right: 20px;
+  font-size: 20px;
 }
 
 footer {
@@ -216,15 +190,6 @@ footer {
   height: 17px !important;
 }
 
-@media (max-width: 576px) {
-    header, main {
-        padding: 0 1.5rem;
-    }
-    .details {
-        margin-top: 1rem;
-    }
-}
-
 // Utilities
 .d-inline-block {
   display: inline-block;
@@ -240,12 +205,28 @@ footer {
   }
 }
 
+.color-primary {
+  color: $primary-color;
+}
+
+.flex {
+  display: flex;
+}
+
+.mb-2 {
+  margin-bottom: 0.75rem;
+}
+
 .mb-3 {
   margin-bottom: 1rem;
 }
 
 .mt-3 {
   margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 2rem;
 }
 
 .mt-5 {
@@ -281,6 +262,25 @@ footer {
   .col-md-6 {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  header,
+  main {
+    padding: 0 1.5rem;
+  }
+  main {
+    padding-top: 1rem;
+  }
+  .details {
+    margin-top: 1rem;
   }
 }
 

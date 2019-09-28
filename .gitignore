@@ -45,3 +45,5 @@ Thumbs.db
 
 package-lock\.json
 /.env
+.cache
+public
